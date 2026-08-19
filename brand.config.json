@@ -1,11 +1,11 @@
 {
-    "brand_name": "YourBrand",
-    "brand_domain": "yourbrand.com",
+    "brand_name": "HIKA TRADERS",
+    "brand_domain": "hikatraders.netlify.app",
     "brand_hostname": {
-        "staging": "staging.yourbrand.com/dashboard",
-        "production": "yourbrand.com/dashboard"
+        "staging": "hikatraders.netlify.app",
+        "production": "hikatraders.netlify.app"
     },
-    "domain_name": "YourBrand.com",
+    "domain_name": "hikatraders.netlify.app",
     "colors": {
         "primary": "#3B82F6",
         "secondary": "#64748b",
@@ -86,10 +86,10 @@
         },
         "hostname": {
             "production": {
-                "com": "bot.yourbrand.com"
+                "com": "hikatraders.netlify.app"
             },
             "staging": {
-                "com": "staging-bot.yourbrand.com"
+                "com": "hikatraders.netlify.app"
             }
         },
         "auth2_url": {
@@ -106,7 +106,7 @@
                 "derivatives": "derivatives/"
             }
         },
-        "show_name": false,
+        "show_name": true,
         "logo_path": "/logo.jpg"
     }
 }

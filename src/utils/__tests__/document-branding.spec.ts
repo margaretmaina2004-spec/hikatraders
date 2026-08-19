@@ -1,3 +1,25 @@
+describe('applyDocumentTitle', () => {
+    afterEach(() => {
+        document.title = '';
+        jest.dontMock('../branding');
+        jest.resetModules();
+    });
+
+    it('keeps the partner identity and describes the product', () => {
+        jest.isolateModules(() => {
+            jest.doMock('../branding', () => ({
+                getAppName: () => 'HIKA TRADERS',
+                getLogoCandidates: () => [],
+            }));
+            const { applyDocumentTitle } = require('../document-branding');
+
+            applyDocumentTitle();
+
+            expect(document.title).toBe('HIKA TRADERS | Automated Trading Bot');
+        });
+    });
+});
+
 describe('applyPrimaryColorFromConfig', () => {
     afterEach(() => {
         // The CSS vars are set on the shared jsdom <html>; clear between cases.

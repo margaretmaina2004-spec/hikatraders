@@ -11,7 +11,7 @@ import brandConfig from '../../brand.config.json';
  */
 export function applyDocumentTitle(): void {
     const name = getAppName();
-    if (name) document.title = name;
+    if (name) document.title = `${name} | Automated Trading Bot`;
 }
 
 /**
